@@ -104,8 +104,8 @@ class Dnn:
         self.__train_load_dataset = True
         tmpDataset = Dataset()
         self._train_dataset = input_data.load_train_dataset(tmpDataset,train_data) 
-        print(self._train_dataset.labels)
-        print(self._train_dataset.features)
+        #print(self._train_dataset.labels)
+        #print(self._train_dataset.features)
         self._train_dataset_size = self._train_dataset.num_examples
         self._train_feature_size = len(train_data[0])
         self._train_label_size = 1
