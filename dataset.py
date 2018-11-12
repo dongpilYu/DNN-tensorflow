@@ -58,10 +58,9 @@ class Dataset:
         """
         if self._idx >= self.num_examples:
             self.reset_batch()
-        print("dongpil")
-        print(self.num_examples)
+        #print(self.num_examples)
         i = self._idx
         j = self._idx + batch_size
         self._idx += batch_size
-        print(self.features[i:j])
+        #print(self.features[i:j])
         return self.features[i:j], self.labels[i:j]
