@@ -18,9 +18,9 @@ HNODES_NUM = [1024,1024,512]
 N_SPLITS = 5
 
 if __name__ == '__main__':
-  
+     
     # 데이터셋의 위치를 정의하고, 해당 디렉토리의 모든 파일에 순차적으로 접근하여 모델을 생성한다. 
-    for (path, dir,files) in os.walk("/home/dong/nk-data-high"):
+    for (path, dir,files) in os.walk("/home/dong/181112/sol10000/real-valued-20"):
         for filename in files:
             my_dnn = Dnn()
             my_dnn.set_device(DEVICE)
